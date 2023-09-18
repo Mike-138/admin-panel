@@ -21,13 +21,26 @@ body {
 header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
 }
 
-.profile-container > a, .greeting-container {
+.search-form, .options, .profile-container > a, .greeting-container {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 0.5em;
+    background-color: rgb(228, 229, 245);
+    border: none;
+    border-radius: 25px;
+}
+
+input[type="text"]:focus {
+    outline: 1px solid rgb(16, 20, 20)
 }
 
 a {
