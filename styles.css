@@ -86,7 +86,14 @@ a {
 
 .sidebar {
     grid-area: sidebar;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    gap: 1rem;
     background-color: aqua;
+}
+
+li {
+    list-style-position: inside; /* bullets exist outside content box without this line */
 }
 
 main {
