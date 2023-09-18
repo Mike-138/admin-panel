@@ -109,7 +109,19 @@ main {
 
 .projects-container {
     grid-area: projects;
+    display: grid;
+    gap: 1rem;
+    grid-template: min-content / repeat(auto-fit, minmax(30ch, 1fr));
     background-color: antiquewhite;
+}
+
+.projects-container h3 {
+    grid-column: 1 / -1;
+}
+
+.project-item {
+    background-color: white;
+    border-radius: 10px;
 }
 
 .announcements-container {
