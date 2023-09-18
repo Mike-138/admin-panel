@@ -57,14 +57,21 @@ a {
     color: inherit;
 }
 
-.avatar {
-    width: 4rem;
+.avatar, .icon {
     aspect-ratio: 1;
     border-radius: 50%;
 }
 
-.avatar.small {
+.medium {
+    width: 4rem;
+}
+
+.small {
     width: 3rem;
+}
+
+.tiny {
+    width: 2rem;
 }
 
 .actions-container > button {
