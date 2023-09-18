@@ -98,5 +98,26 @@ li {
 
 main {
     grid-area: main;
+    display: grid;
+    gap: 1rem;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
     background-color: gray;
+}
+
+.projects-container {
+    grid-area: projects;
+    background-color: antiquewhite;
+}
+
+.announcements-container {
+    grid-area: announcements;
+    background-color: brown;
+}
+
+.trending-container {
+    grid-area: trending;
+    background-color: chartreuse;
 }
