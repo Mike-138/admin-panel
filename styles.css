@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+}
+
+header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: aqua;
+}
+
+main {
+    grid-area: main;
+    background-color: gray;
+}
