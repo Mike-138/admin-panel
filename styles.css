@@ -116,12 +116,15 @@ main {
     background-color: gray;
 }
 
-.projects-container {
-    grid-area: projects;
+.projects-container, .announcements-container, .trending-container {
     display: grid;
     gap: 1rem;
     grid-template: min-content / repeat(auto-fit, minmax(30ch, 1fr));
     background-color: antiquewhite;
+}
+
+.projects-container {
+    grid-area: projects;
 }
 
 .projects-container h3 {
@@ -129,16 +132,26 @@ main {
 }
 
 .project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 10px;
 }
 
+.reaction-container {
+    align-self: flex-end;
+}
+
 .announcements-container {
     grid-area: announcements;
-    background-color: brown;
+}
+
+.announcement-item {
+    background-color: white;
+    border-radius: 10px;
 }
 
 .trending-container {
     grid-area: trending;
-    background-color: chartreuse;
 }
