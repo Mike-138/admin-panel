@@ -34,7 +34,7 @@ header {
     display: block; /* button causes content to be inline-block by default -> causes miasmatch with image */
 }
 
-.search-form, .options, .profile-container, .greeting-container {
+.search-form, .options-container, .profile-container, .greeting-container {
     display: flex;
     align-items: center;
     gap: 1rem;
