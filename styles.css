@@ -101,8 +101,55 @@ a {
     background-color: aqua;
 }
 
-li {
-    list-style-position: inside; /* bullets exist outside content box without this line */
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding-left: 2rem;
+    background-repeat: no-repeat;
+}
+
+.dash-header {
+    padding-left: 2rem;
+    background-repeat: no-repeat;
+    background-image: url(icons/view-dashboard.svg);
+}
+
+.home-link {
+    background-image: url(icons/home-outline.svg);
+}
+
+.profile-link {
+    background-image: url(icons/face-man-profile.svg);
+}
+
+.messages-link {
+    background-image: url(icons/message-outline.svg);
+}
+
+.history-link {
+    background-image: url(icons/clock-time-five-outline.svg);
+}
+
+.tasks-link {
+    background-image: url(icons/note-multiple-outline.svg);
+}
+
+.communities-link {
+    background-image: url(icons/account-group.svg);
+}
+
+.settings-link {
+    background-image: url(icons/cog.svg);
+}
+
+.support-link {
+    background-image: url(icons/chat-question-outline.svg);
+}
+
+.privacy-link {
+    background-image: url(icons/shield-check-outline.svg);
 }
 
 main {
