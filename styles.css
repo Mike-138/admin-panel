@@ -25,7 +25,16 @@ header {
     gap: 25px;
 }
 
-.search-form, .options, .profile-container > a, .greeting-container {
+.img-btn {
+    background: none;
+    border: none;
+}
+
+.img-btn > * {
+    display: block; /* button causes content to be inline-block by default -> causes miasmatch with image */
+}
+
+.search-form, .options, .profile-container, .greeting-container {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -52,6 +61,10 @@ a {
     width: 4rem;
     aspect-ratio: 1;
     border-radius: 50%;
+}
+
+.avatar.small {
+    width: 3rem;
 }
 
 .actions-container > button {
