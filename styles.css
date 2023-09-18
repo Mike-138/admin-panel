@@ -120,7 +120,6 @@ main {
     display: grid;
     gap: 1rem;
     grid-template: min-content / repeat(auto-fit, minmax(30ch, 1fr));
-    background-color: antiquewhite;
 }
 
 .projects-container {
@@ -132,6 +131,7 @@ main {
 }
 
 .project-item {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -148,10 +148,17 @@ main {
 }
 
 .announcement-item {
+    padding: 2rem;
     background-color: white;
     border-radius: 10px;
 }
 
 .trending-container {
     grid-area: trending;
+}
+
+.trending-item {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
 }
