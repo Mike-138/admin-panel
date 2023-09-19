@@ -197,6 +197,9 @@ main {
 
 .announcement-item, .trending-item {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     border-radius: 10px;
 }
