@@ -195,7 +195,7 @@ main {
     grid-area: announcements;
 }
 
-.announcement-item {
+.announcement-item, .trending-item {
     padding: 2rem;
     background-color: white;
     border-radius: 10px;
@@ -203,10 +203,4 @@ main {
 
 .trending-container {
     grid-area: trending;
-}
-
-.trending-item {
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
 }
