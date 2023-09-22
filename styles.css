@@ -207,16 +207,15 @@ main {
     display: block;
     margin-top: 1rem; /* must equal announcement item flex gap to keep verticaal symmetry between items */
     height: 1px;
-    width: 100%;
     background-color: black;
 }
 
 .announcement-item, .trending-item {
     padding: 2rem;
+    max-width: 30ch;
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    align-items: center;
     background-color: white;
     border-radius: 10px;
 }
