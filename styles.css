@@ -202,6 +202,15 @@ main {
     grid-area: announcements;
 }
 
+.announcement-description:not(:last-child)::after {
+    content: "";
+    display: block;
+    margin-top: 1rem; /* must equal announcement item flex gap to keep verticaal symmetry between items */
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
 .announcement-item, .trending-item {
     padding: 2rem;
     display: flex;
