@@ -25,6 +25,8 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+    z-index: 1; /* for box shadow to appear over main body */
 }
 
 .img-btn {
@@ -100,6 +102,7 @@ a {
     grid-template-rows: repeat(3, min-content);
     gap: 1rem;
     background-color: aqua;
+    z-index: 2; /* prevent header box shadow from bleeding in */
 }
 
 ul {
@@ -162,7 +165,7 @@ main {
     grid-template-areas:
         "projects announcements"
         "projects trending";
-    background-color: gray;
+    background-color: rgb(226, 216, 216);
 }
 
 .projects-container, .announcements-container, .trending-container {
