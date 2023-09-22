@@ -214,3 +214,11 @@ main {
 .trending-container {
     grid-area: trending;
 }
+
+.trending-description > p:first-child {
+    font-weight: bold;
+}
+
+p {
+    margin: 0.25rem 0;
+}
