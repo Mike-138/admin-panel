@@ -1,5 +1,4 @@
 html {
-    height: 100%; /* for testing with dev tools; to be removed */
     box-sizing: border-box;
 }
 
@@ -11,7 +10,7 @@ html {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: inherit; /* for testing with dev tools; to be replaced with min-height: 100vh */
+    min-height: 100vh;
     display: grid;
     grid-template: 1fr 4fr / 2fr 7fr;
     grid-template-areas:
@@ -21,7 +20,7 @@ body {
 
 header {
     grid-area: header;
-    padding: 0 4rem;
+    padding: 1rem 4rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
