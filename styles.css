@@ -34,7 +34,7 @@ header {
 }
 
 .img-btn > * {
-    display: block; /* button causes content to be inline-block by default -> causes miasmatch with image */
+    display: block; /* button causes content to be inline-block by default -> causes mismatch with image */
 }
 
 .search-form, .options-container, .profile-container, .greeting-container, .actions-container {
