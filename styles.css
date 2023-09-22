@@ -13,7 +13,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: inherit; /* for testing with dev tools; to be replaced with min-height: 100vh */
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 1fr 4fr / 2fr 7fr;
     grid-template-areas:
         "sidebar header"
         "sidebar main";
@@ -98,6 +98,7 @@ a {
 
 .sidebar {
     grid-area: sidebar;
+    padding: 1rem 2rem;
     display: grid;
     grid-template-rows: repeat(3, min-content);
     gap: 1rem;
@@ -110,12 +111,14 @@ ul {
 }
 
 ul li {
-    padding-left: 2rem;
+    font-size: 1.5rem;
+    padding-left: 3rem; /* double the font-size */
+    margin: 1rem 0;
     background-repeat: no-repeat;
 }
 
 .dash-header {
-    padding-left: 2rem;
+    padding-left: 3rem;
     background-repeat: no-repeat;
     background-image: url(icons/view-dashboard.svg);
 }
